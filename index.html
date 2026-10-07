@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RENVAL CLOTHES</title>
+<meta name="description" content="RENVAL CLOTHES — Wear What's Next.">
+
+<style>
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html,
+body{
+  min-height:100%;
+}
+
+body{
+  background:#050607;
+  color:#fff;
+  font-family:Arial,Helvetica,sans-serif;
+  display:flex;
+  justify-content:center;
+  padding:18px;
+}
+
+.page{
+  width:100%;
+  max-width:520px;
+  min-height:calc(100vh - 36px);
+
+  position:relative;
+  overflow:hidden;
+
+  border:1px solid rgba(255,255,255,.09);
+  border-radius:24px;
+
+  background:
+    radial-gradient(
+      circle at 50% 18%,
+      rgba(90,150,180,.09),
+      transparent 25%
+    ),
+    linear-gradient(
+      145deg,
+      #161719 0%,
+      #08090a 48%,
+      #111214 100%
+    );
+
+  box-shadow:0 25px 80px rgba(0,0,0,.65);
+
+  padding:60px 24px 28px;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.page:before{
+  content:"";
+
+  position:absolute;
+  inset:-20%;
+
+  background:
+    linear-gradient(
+      125deg,
+      transparent 30%,
+      rgba(255,255,255,.025) 42%,
+      transparent 55%
+    );
+
+  transform:rotate(-5deg);
+  pointer-events:none;
+}
+
+
+/* BRAND */
+
+.brand{
+  position:relative;
+  z-index:1;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size:36px;
+  font-weight:600;
+
+  letter-spacing:11px;
+  margin-left:11px;
+}
+
+.clothes{
+  position:relative;
+  z-index:1;
+
+  margin-top:10px;
+
+  font-size:12px;
+  letter-spacing:8px;
+
+  color:#e4e4e4;
+}
+
+
+/* DECORATION */
+
+.decor{
+  position:relative;
+  z-index:1;
+
+  display:flex;
+  align-items:center;
+
+  gap:14px;
+
+  margin:18px 0 12px;
+}
+
+.decor i{
+  display:block;
+
+  width:58px;
+  height:1px;
+
+  background:#9da3a8;
+}
+
+.decor b{
+  font-size:11px;
+  color:#b9c0c5;
+}
+
+
+/* TAGLINE */
+
+.tagline{
+  position:relative;
+  z-index:1;
+
+  font-family:
+    "Brush Script MT",
+    "Segoe Script",
+    cursive;
+
+  font-size:30px;
+  font-style:italic;
+
+  color:#e9edf0;
+
+  text-align:center;
+
+  margin-bottom:31px;
+}
+
+
+/* SOCIAL LINKS */
+
+.links{
+  width:100%;
+
+  position:relative;
+  z-index:1;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:13px;
+}
+
+.social{
+  width:100%;
+  min-height:62px;
+
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:15px;
+
+  background:rgba(255,255,255,.035);
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  gap:13px;
+
+  text-decoration:none;
+  color:#fff;
+
+  font-size:13px;
+  font-weight:700;
+
+  letter-spacing:2.4px;
+
+  transition:.22s ease;
+}
+
+.social:hover{
+  transform:translateY(-2px);
+
+  border-color:
+    rgba(180,210,225,.55);
+
+  background:
+    rgba(255,255,255,.07);
+}
+
+.icon{
+  width:25px;
+  height:25px;
+  display:block;
+}
+
+
+/* FOOTER */
+
+.footer{
+  margin-top:auto;
+
+  padding-top:34px;
+
+  position:relative;
+  z-index:1;
+
+  color:#777;
+
+  font-size:10px;
+  letter-spacing:4px;
+}
+
+
+/* MOBILE */
+
+@media(max-width:430px){
+
+  body{
+    padding:9px;
+  }
+
+  .page{
+    min-height:calc(100vh - 18px);
+    padding:50px 18px 24px;
+  }
+
+  .brand{
+    font-size:30px;
+    letter-spacing:8px;
+  }
+
+  .tagline{
+    font-size:27px;
+  }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<main class="page">
+
+
+  <!-- BRAND -->
+
+  <div class="brand">
+    RENVAL
+  </div>
+
+  <div class="clothes">
+    CLOTHES
+  </div>
+
+
+  <!-- DECORATION -->
+
+  <div class="decor">
+
+    <i></i>
+
+    <b>✦</b>
+
+    <i></i>
+
+  </div>
+
+
+  <!-- TAGLINE -->
+
+  <div class="tagline">
+    Wear What's Next.
+  </div>
+
+
+  <!-- SOCIAL LINKS -->
+
+  <div class="links">
+
+
+    <!-- WHATSAPP -->
+
+    <a
+      class="social"
+      href="https://wa.me/8801998191865"
+      target="_blank"
+      rel="noopener"
+    >
+
+      <svg
+        class="icon"
+        viewBox="0 0 24 24"
+        aria-label="WhatsApp"
+      >
+
+        <path
+          d="M12 2.2a9.8 9.8 0 0 0-8.45 14.76L2.2 21.8l4.95-1.3A9.8 9.8 0 1 0 12 2.2Z"
+          fill="none"
+          stroke="#fff"
+          stroke-width="1.55"
+          stroke-linejoin="round"
+        />
+
+        <path
+          d="M8.75 8.65c.2-.35.4-.37.65-.37h.43c.16 0 .3.09.37.24l.53 1.25c.06.15.04.32-.07.44l-.4.46c-.08.09-.09.23-.02.34.3.48.73.91 1.21 1.21.11.07.25.06.34-.02l.46-.4c.12-.11.29-.13.44-.07l1.25.53c.15.07.24.21.24.37v.43c0 .25-.03.45-.37.65-.4.22-1.45.5-2.96-.61-1.51-1.11-2.36-2.49-2.6-2.96-.24-.47-.21-1.37.27-1.72Z"
+          fill="#fff"
+        />
+
+      </svg>
+
+      WHATSAPP
+
+    </a>
+
+
+    <!-- FACEBOOK -->
+
+    <a
+      class="social"
+      href="https://www.facebook.com/share/19e4otBsUY/"
+      target="_blank"
+      rel="noopener"
+    >
+
+      <svg
+        class="icon"
+        viewBox="0 0 24 24"
+        aria-label="Facebook"
+      >
+
+        <circle
+          cx="12"
+          cy="12"
+          r="10"
+          fill="none"
+          stroke="#fff"
+          stroke-width="1.7"
+        />
+
+        <path
+          d="M13.55 19v-6.05h2.03l.31-2.36h-2.34V9.08c0-.68.19-1.15 1.17-1.15h1.3V5.82c-.23-.03-1.02-.1-1.94-.1-1.92 0-3.24 1.17-3.24 3.31v1.56H8.67v2.36h2.17V19h2.71Z"
+          fill="#fff"
+        />
+
+      </svg>
+
+      FACEBOOK
+
+    </a>
+
+
+    <!-- INSTAGRAM -->
+
+    <a
+      class="social"
+      href="https://www.instagram.com/renvalclothes?stkn=ZGpzenI4bG04NDJj"
+      target="_blank"
+      rel="noopener"
+    >
+
+      <svg
+        class="icon"
+        viewBox="0 0 24 24"
+        aria-label="Instagram"
+      >
+
+        <rect
+          x="3.2"
+          y="3.2"
+          width="17.6"
+          height="17.6"
+          rx="5.1"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+        />
+
+        <circle
+          cx="12"
+          cy="12"
+          r="4.15"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.8"
+        />
+
+        <circle
+          cx="17.35"
+          cy="6.75"
+          r="1.15"
+          fill="currentColor"
+        />
+
+      </svg>
+
+      INSTAGRAM
+
+    </a>
+
+
+    <!-- TIKTOK -->
+
+    <a
+      class="social"
+      href="https://www.tiktok.com/@renvalclothes"
+      target="_blank"
+      rel="noopener"
+    >
+
+      <svg
+        class="icon"
+        viewBox="0 0 24 24"
+      >
+
+        <path
+          d="M14.1 4.2c.42 1.65 1.34 2.67 3.05 2.96v2.3c-1.17-.02-2.22-.35-3.05-.92v6.13c0 3.13-2.08 5.13-5 5.13-2.65 0-4.48-1.84-4.48-4.25 0-2.68 2.16-4.55 4.75-4.55.38 0 .75.04 1.1.13v2.35a2.94 2.94 0 0 0-.93-.15c-1.24 0-2.45.83-2.45 2.2 0 1.08.8 1.88 1.96 1.88 1.33 0 2.7-.86 2.7-3.08V4.2h2.35Z"
+          fill="currentColor"
+        />
+
+      </svg>
+
+      TIKTOK
+
+    </a>
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <div class="footer">
+    THANKS FOR VISITING
+  </div>
+
+
+</main>
+
+</body>
+</html>
